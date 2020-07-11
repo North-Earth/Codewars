@@ -35,7 +35,7 @@ namespace Codewars.CSharp.Kata
 
             for (var i = 2; i <= Math.Sqrt(n); i++)
             {
-                if (n % i != 0) continue;
+                if (n % i != 0) { continue; }
 
                 result.Add(i);
 
