@@ -34,18 +34,14 @@ namespace Codewars.CSharp.Kata
                 .Sum().Equals(value);
         }
 
-        /// <summary>
-        /// Best practice according to the community Codewars.
-        /// </summary>
+        #region Best practice according to the community Codewars.
+
         public static bool NarcissisticBestPractice1(int value)
         {
             var str = value.ToString();
             return str.Sum(c => Math.Pow(Convert.ToInt16(c.ToString()), str.Length)) == value;
         }
 
-        /// <summary>
-        /// Best practice according to the community Codewars.
-        /// </summary>
         public static bool NarcissisticBestPractice2(int value)
         {
             var lstInt = value.ToString().Select(x => int.Parse(x.ToString())).ToList();
@@ -59,10 +55,6 @@ namespace Codewars.CSharp.Kata
             return resultTemp == value;
         }
 
-
-        /// <summary>
-        /// Best practice according to the community Codewars.
-        /// </summary>
         public static bool NarcissisticBestPractice3(int value)
         {
             string digits = value.ToString();
@@ -88,10 +80,10 @@ namespace Codewars.CSharp.Kata
             146511208, 472335975, 534494836, 912985153,
         };
 
-        /// <summary>
-        /// Best practice according to the community Codewars.
-        /// </summary>
         public static bool NarcissisticBestPractice4(int value) =>
-          nNums.Contains(value);
+            nNums.Contains(value);
+
+        #endregion
+
     }
 }

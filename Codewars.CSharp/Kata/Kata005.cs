@@ -25,12 +25,13 @@ namespace Codewars.CSharp.Kata
             return letters.All(str.ToLower().Contains);
         }
 
-        /// <summary>
-        /// Best practice according to the community Codewars.
-        /// </summary>
+        #region Best practice according to the community Codewars.
+
         public static bool IsPangramBestPractice(string str)
         {
             return str.Where(ch => Char.IsLetter(ch)).Select(ch => Char.ToLower(ch)).Distinct().Count() == 26;
         }
+
+        #endregion
     }
 }

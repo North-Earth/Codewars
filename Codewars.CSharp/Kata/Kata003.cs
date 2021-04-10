@@ -34,12 +34,13 @@ namespace Codewars.CSharp.Kata
             return result.Sum();
         }
 
-        /// <summary>
-        /// Best practice according to the community Codewars.
-        /// </summary>
+        #region Best practice according to the community Codewars.
+
         public static int SolutionBestPractice(int n)
         {
             return Enumerable.Range(0, n).Where(e => e % 3 == 0 || e % 5 == 0).Sum();
         }
+
+        #endregion
     }
 }

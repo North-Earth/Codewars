@@ -18,6 +18,9 @@ namespace Codewars.CSharp.Kata
 
         private static List<int> Cash = new List<int>();
 
+        /// <summary>
+        /// My version.
+        /// </summary>
         public static string Tickets(int[] peopleInLine)
         {
             Cash.Clear();
@@ -51,6 +54,8 @@ namespace Codewars.CSharp.Kata
 
             return false;
         }
+
+        #region Best practice according to the community Codewars.
 
         public static string TicketsBestPractice1(int[] peopleInLine)
         {
@@ -99,5 +104,8 @@ namespace Codewars.CSharp.Kata
             }
             return m25 < 0 ? "NO" : "YES";
         }
+
+        #endregion
+
     }
 }

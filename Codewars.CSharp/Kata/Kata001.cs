@@ -27,12 +27,13 @@ namespace Codewars.CSharp.Kata
                     : x));
         }
 
-        /// <summary>
-        /// Best practice according to the community Codewars.
-        /// </summary>
+        #region Best practice according to the community Codewars.
+
         public static string SpinWordsBestPractice(string sentence)
         {
             return String.Join(" ", sentence.Split(' ').Select(str => str.Length >= 5 ? new string(str.Reverse().ToArray()) : str));
         }
+
+        #endregion
     }
 }

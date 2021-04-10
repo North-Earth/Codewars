@@ -21,12 +21,13 @@ namespace Codewars.CSharp.Kata
             return result.ToArray();
         }
 
-        /// <summary>
-        /// Best practice according to the community Codewars.
-        /// </summary>
+        #region Best practice according to the community Codewars.
+
         public static int[] MoveZeroesBestPractice(int[] arr)
         {
             return arr.OrderBy(x => x == 0).ToArray();
         }
+
+        #endregion
     }
 }

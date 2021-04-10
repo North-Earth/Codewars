@@ -50,9 +50,8 @@ namespace Codewars.CSharp.Kata
             return result.ToArray();
         }
 
-        /// <summary>
-        /// Best practice according to the community Codewars.
-        /// </summary>
+        #region Best practice according to the community Codewars.
+
         public static int[] DivisorsBestPractice(int n)
         {
             List<int> l = new List<int>();
@@ -62,5 +61,7 @@ namespace Codewars.CSharp.Kata
             l.AddRange(k);
             return l.ToArray();
         }
+
+        #endregion
     }
 }

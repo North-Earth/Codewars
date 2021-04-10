@@ -13,12 +13,13 @@ namespace Codewars.CSharp.Kata
         /// </summary>
         public static int[] ArrayDiff(int[] a, int[] b) => a.Where(item => !b.Contains(item)).ToArray();
 
-        /// <summary>
-        /// Best practice according to the community Codewars.
-        /// </summary>
+        #region Best practice according to the community Codewars.
+
         public static int[] ArrayDiffBestPractice(int[] a, int[] b)
         {
             return a.Where(n => !b.Contains(n)).ToArray();
         }
+
+        #endregion
     }
 }
