@@ -1,7 +1,8 @@
-# Codewars 
-
-
-![alt text](https://www.codewars.com/users/Revolt27/badges/large?logo=false)
-
-
-### My profile: [Revolt27](https://www.codewars.com/users/Revolt27)
+<div align="center">
+<h1>
+<a href="https://www.codewars.com/users/North-Earth">
+    <img alt="CodeWars"
+        src="https://www.codewars.com/users/North-Earth/badges/large" />
+</a>
+</h1>
+</div>
