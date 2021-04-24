@@ -8,6 +8,9 @@ namespace Codewars.CSharp.Kata
     /// </summary>
     public class Kata011
     {
+        /// <summary>
+        /// My version.
+        /// </summary>
         public static bool ValidParentheses(string input)
         {
             var chars = input
